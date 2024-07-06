@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animal Behavior Tracking System</title>
+  <style>
+    body {
+      background-image: url('https://wallpapers.com/images/hd/african-animals-background-j43av377ppl5kk34.jpg');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    header{
+      text-align: center;
+      background-color:black;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #595248; 
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1; /* Allows main content to grow and take remaining available space */
+    }
+
+    button {
+      font-size: 18px;
+      padding: 5px 10px;
+      background-color: #262118;
+      color: #EFF2D8;
+      border: none;
+      cursor: pointer;
+      margin-top: 99px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Animal Behavior Tracking System</h1>
+  </header>
+  <main>
+    <button onclick="startDetection()">Start Detection</button>
+  </main>
+  
+  <script>
+    function startDetection() {
+      fetch('/start_detection', {
+        method: 'POST'
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => {
+        alert(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+  </script>
+</body>
+</html>
