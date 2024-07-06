@@ -31,13 +31,13 @@ To get started with the Animal Behavior Tracking System:
    - Input your video streams and analyze the outputs for behavior tracking and injury detection.
 
 ### Output Images
-## Detect & Identify the animal
+### Detect & Identify the animal
 ![Image 1](https://github.com/Harshitaa-G-A/Animal-Behavior-Tracking-System/assets/146211436/a2f413c5-2c93-4936-ab8b-8fea3ee1fdab)
-# Detect the mouth & analyse mouth movement
+### Detect the mouth & analyse mouth movement
 ![Image 2](https://github.com/Harshitaa-G-A/Animal-Behavior-Tracking-System/assets/146211436/563a1471-eeed-4bbb-ae30-0da0d905e6e6)
-# Colour Analysis to detect injuries
+### Colour Analysis to detect injuries
 ![Image 3](https://github.com/Harshitaa-G-A/Animal-Behavior-Tracking-System/assets/146211436/62912382-bd31-4946-b664-68105ae15acc)
-# Generate report
+### Generate report
 ![Image 4](https://github.com/Harshitaa-G-A/Animal-Behavior-Tracking-System/assets/146211436/6f281562-99f2-45ec-a73b-b32f57972c88)
 
 ![Image 5](https://github.com/Harshitaa-G-A/Animal-Behavior-Tracking-System/assets/146211436/2549033e-22e3-4db4-92f4-fe63fce58035)
